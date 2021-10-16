@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/magic-trunfo/static/css/main.a442ae71.chunk.css",
+    "main.js": "/magic-trunfo/static/js/main.4e77efdd.chunk.js",
+    "main.js.map": "/magic-trunfo/static/js/main.4e77efdd.chunk.js.map",
+    "runtime-main.js": "/magic-trunfo/static/js/runtime-main.8b505b2c.js",
+    "runtime-main.js.map": "/magic-trunfo/static/js/runtime-main.8b505b2c.js.map",
+    "static/js/2.c07f352f.chunk.js": "/magic-trunfo/static/js/2.c07f352f.chunk.js",
+    "static/js/2.c07f352f.chunk.js.map": "/magic-trunfo/static/js/2.c07f352f.chunk.js.map",
+    "index.html": "/magic-trunfo/index.html",
+    "static/css/main.a442ae71.chunk.css.map": "/magic-trunfo/static/css/main.a442ae71.chunk.css.map",
+    "static/js/2.c07f352f.chunk.js.LICENSE.txt": "/magic-trunfo/static/js/2.c07f352f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/magic-trunfo/static/media/Beleren2016-Bold.c859de12.woff",
+    "static/media/App.css": "/magic-trunfo/static/media/MagicWhite.55c77cc1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b505b2c.js",
+    "static/js/2.c07f352f.chunk.js",
+    "static/css/main.a442ae71.chunk.css",
+    "static/js/main.4e77efdd.chunk.js"
+  ]
+}
