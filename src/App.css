@@ -1,38 +1,252 @@
-.App {
+html {
+  --color: rgba(0, 0, 0, 0.574);
+
+  --color-light: rgba(0, 0, 0, 0.149);
+
+  --color-dark: rgb(30, 30, 30);
+
+  --font-size: 1.2rem;
+
+  --radius: 0.2rem;
+}
+
+body {
+  background-image: url('assets/Gray_Patterned_BG.jpg');
+  font-family: 'Beleren Bold';
+  margin: 0;
+}
+
+body, input, textarea, button {
+  font-family: 'Beleren Bold';
+  font-size: var(--font-size);
+}
+
+header {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, ul {
+  margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  color: azure;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: square;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input, textarea, select {
+  background: white;
+  border: transparent;
+  border-radius: 0.2rem;
+  display: block;
+  margin-bottom: 14px;
+  padding: 0.8rem;
+  transition: 0.2s;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  background: white;
+  border-color: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light);
+  outline: none;
+}
+
+button {
+  background: var(--color);
+  border: none;
+  border-radius: var(--radius);
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  transition: 0.1s;
+}
+
+button:hover, button:focus {
+  background: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light) , 0 0 0 4px var(--color);
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 0 0 3px var(--color) , 0 0 0 4px var(--color);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 2rem auto;
+}
+
+.normal, .raro, .muitoraro {
+  border-radius: 23px;
   display: flex;
   flex-direction: column;
+  height: 560px;
+  position: relative;
+  width: 400px;
+}
+
+.normal {
+  background-image: url('assets/MagicWhite.png');
+}
+
+.raro {
+  background-image: url('assets/MagicPrata.png');
+}
+
+.muitoraro {
+  background-image: url('assets/MagicGold.png');
+}
+
+.nameCard {
+  align-self: flex-end;
+  margin: 35px 35px 10px;
+}
+
+.image-card {
+  position: relative;
+  z-index: -2;
+}
+
+.cardRare {
+  align-self: flex-start;
+  margin: -28px 40px -8px;
+}
+
+.description-card {
+  font-size: 1rem;
+  height: 80px;
+  margin: 28px 40px -8px;
+  width: 300px;
+}
+
+.attrContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 40px;
+  width: 300px;
+}
+
+.attrCard {
+  text-align: center;
+}
+
+.trunfo-card {
+  align-self: flex-end;
+  margin: -15px 40px -10px;
+}
+
+.inputPreviewContainer {
+  align-content: stretch;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.inputContainer, .previewContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 99vh;
+}
+
+.inputContainer {
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.previewContainer {
+  background-color: rgba(0, 0, 0, 0.261);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  width: 50%;
+  z-index: -20;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer h2 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputContainer input, .inputContainer select {
+  margin: 1.2vh;
+}
+
+.filtro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.inputFilter {
+  z-index: 10;
+}
+
+.name-filter, .rare-filter, .trunfo-filter {
+  color: azure;
+}
+
+.header2 {
+  align-items: center;
+  background-color: black;
+  color: azure;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+.deckSalvo {
+  display: flex;
+}
+
+.cartinha1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartinha2 {
+  padding: 10px;
+}
+
+.checked {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branco {
+  background-image: url('assets/branco.jpg');
+  min-width: 400px;
 }
