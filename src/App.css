@@ -23,7 +23,7 @@ body, input, textarea, button {
 
 header {
   align-items: center;
-  background-color: black;
+  background-color: #191919;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -96,8 +96,15 @@ button:disabled {
 }
 
 hr {
-  border: 2px solid black;
+  border: 2px solid #191919;
   margin: 2rem auto;
+}
+
+.cardbg {
+  background-color: azure;
+  border-radius: 100px;
+  position: relative;
+  z-index: -20;
 }
 
 .normal, .raro, .muitoraro {
@@ -127,13 +134,24 @@ hr {
 }
 
 .image-card {
+  height: 246px;
+  margin: -2px 0px 2px 35px;
+  position: relative;
+  width: 330px;
+  z-index: -2;
+}
+
+.cardPlaceHolder {
   position: relative;
   z-index: -2;
+  height: 270px;
+  margin: -2px 0px 2px 35px;
+  width: 330px;
 }
 
 .cardRare {
   align-self: flex-start;
-  margin: -28px 40px -8px;
+  margin: 3px 40px -8px;
 }
 
 .description-card {
@@ -147,7 +165,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 40px;
+  margin: 5px 40px;
   width: 300px;
 }
 
@@ -178,6 +196,7 @@ hr {
 .inputContainer {
   justify-content: space-evenly;
   width: 50%;
+  color: azure;
 }
 
 .previewContainer {
@@ -215,7 +234,7 @@ hr {
 
 .header2 {
   align-items: center;
-  background-color: black;
+  background-color: #191919;
   color: azure;
   display: flex;
   height: 100px;
@@ -244,9 +263,4 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.branco {
-  background-image: url('assets/branco.jpg');
-  min-width: 400px;
 }
