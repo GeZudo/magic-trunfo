@@ -228,7 +228,7 @@ hr {
   z-index: 10;
 }
 
-.name-filter, .rare-filter, .trunfo-filter {
+.name-filter span, .rare-filter, .trunfo-filter {
   color: azure;
 }
 
